@@ -1,13 +1,19 @@
 .body {
-  background-repeat: no-repeat;
-  background-size: 90%;
-  background-attachment: scroll;
-  height: 100vh;
-  max-height: 700px;
+  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 8.375rem;
   padding-bottom: 3.125rem;
   position: relative;
-  z-index: 1;
+  z-index: 1; 
+}
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  text-align: left;
 }
 
 .background-icons {
@@ -17,48 +23,47 @@
   overflow: hidden;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 0; 
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-  
-  .icon {
-    position: absolute;
-    will-change: transform;
-    animation: float 6s ease-in-out infinite;
+
+.icon {
+  position: absolute;
+  will-change: transform;
+  animation: float 6s ease-in-out infinite;
+}
+
+.crown-icon {
+  top: 20%;
+  left: 10%;
+  width: 50px;
+  height: auto;
+}
+
+.turnip-icon {
+  top: 50%;
+  left: 25%;
+  width: 60px;
+  height: auto;
+}
+
+.potion-icon {
+  top: 70%;
+  left: 75%;
+  width: 65px;
+  height: auto;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
   }
-  
-  .crown-icon {
-    top: 20%;
-    left: 10%;
-    width: 50px;
-    height: auto;
+  50% {
+    transform: translateY(-20px);
   }
-  
-  .turnip-icon {
-    top: 50%;
-    left: 25%;
-    width: 60px;
-    height: auto;
+  100% {
+    transform: translateY(0px);
   }
-  
-  .potion-icon {
-    top: 70%;
-    left: 75%;
-    width: 65px;
-    height: auto;
-  }
-  
-  @keyframes float {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  
+}
