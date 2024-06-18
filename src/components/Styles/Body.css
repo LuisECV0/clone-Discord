@@ -1,25 +1,27 @@
 .body {
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-attachment: scroll;
-    height: 100vh;
-    max-height: 700px;
-    padding-top: 8.375rem;
-    padding-bottom: 3.125rem;
-    position: relative;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-attachment: scroll;
+  height: 100vh;
+  max-height: 700px;
+  padding-top: 8.375rem;
+  padding-bottom: 3.125rem;
+  position: relative;
+  z-index: 1;
 }
+
 .background-icons {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
   
   .icon {
     position: absolute;
