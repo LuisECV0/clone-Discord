@@ -1,5 +1,6 @@
 import React from 'react';
 import './Styles/Body.css';
+import Image1 from './Resources/discord.webp';
 
 function Body() {
   return (
@@ -11,7 +12,7 @@ function Body() {
           <p>Discord es la plataforma perfecta para jugar y pasarlo bien con amigos, o incluso para crear una comunidad con miembros en todo el mundo.</p>
         </div>
       </section>
-      <img href='./Resources/discord.webp'></img>
+      <img src={Image1} alt='discord'></img>
     </div>
   );
 }
