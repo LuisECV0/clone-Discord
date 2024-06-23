@@ -4,7 +4,11 @@
   padding-bottom: 3.125rem;
   position: relative;
   z-index: 1; 
-  /*comentario*/
+}
+
+.body img {
+  width: 500px;
+  position: relative;
 }
 
 .hero {
